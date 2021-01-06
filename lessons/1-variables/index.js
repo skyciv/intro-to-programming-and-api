@@ -1,0 +1,4 @@
+/*
+Variables are a place to hold numbers. 
+There are various types of variables.
+*/

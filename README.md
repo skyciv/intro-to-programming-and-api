@@ -1,4 +1,4 @@
-## Welcome to the Offical SkyCiv Introduction to Programming Course
+<span style="color:#289dcc">Welcome to the Offical SkyCiv Introduction to Programming Course</span>
 
 In this course we will take you from no programming experience to using our world class analysis and design api.
 
