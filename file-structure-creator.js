@@ -10,7 +10,7 @@ const lessons = [
 	{
 		title: 'variables',
 		description:
-            'Variables are a place to hold numbers. \nThere are various types of variables.',
+			'Variables are a place to hold numbers. \nThere are various types of variables.',
 	},
 	{ title: 'arrays', description: '' },
 	{ title: 'loops', description: '' },
@@ -33,7 +33,7 @@ const lessons = [
 
 /**
  * Create a directory at a path
- * @param {string} path 
+ * @param {string} path
  */
 const createDir = (path) => {
 	fs.mkdirSync(path, { recursive: true });
@@ -41,8 +41,8 @@ const createDir = (path) => {
 
 /**
  * Create a file at a path. Optionally insert data
- * @param {string} path 
- * @param {string} content 
+ * @param {string} path
+ * @param {string} content
  */
 const createFile = (path, content = '') => {
 	fs.writeFileSync(path, content);
@@ -52,11 +52,17 @@ const createFile = (path, content = '') => {
  * Create file directory
  */
 const main = () => {
+	
+	return console.log(
+		`Content has been added to lessons now. back-up the data before running this function.`
+	);
+
 	lessons.forEach((lesson, i) => {
 		const { title, description } = lesson;
 		const dirPath = `lessons/${i + 1}-${title}`;
 
 		createDir(dirPath);
+		createFile(`${dirPath}/README.md`, `# ${title.replace('-', ' ')}`);
 		createFile(`${dirPath}/index.js`, `/*\n${description}\n*/`);
 		createFile(`${dirPath}/index.ipynb`, ``);
 	});
