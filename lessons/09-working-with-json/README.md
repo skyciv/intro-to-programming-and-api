@@ -45,7 +45,7 @@ const platesToJson = JSON.stringify(plates);
 
 After using `JSON.stringify` on the object, `platesToJson` now contains the string:
 
-`"{"plates":{"1":{"nodes":[4,5,7,6],"thickness":50,"is_meshed":true,"some_empty_value":null}}}"`
+`"{\"plates\":{\"1\":{\"nodes\":[4,5,7,6],\"thickness\":50,\"is_meshed\":true,\"some_empty_value\":null}}}"`
 
 ---
 
@@ -74,7 +74,7 @@ plates_to_json = json.dumps(plates)
 
 But after using Python's `json` library denoted by the `import json` at above the dictionary, the variable `plates_to_json` becomes:
 
-`"{"plates": {"1": {"nodes": [4, 5, 7, 6], "thickness": 50, "is_meshed": true, "some_empty_value": null}}}"`
+`"{\"plates\":{\"1\":{\"nodes\":[4,5,7,6],\"thickness\":50,\"is_meshed\":true,\"some_empty_value\":null}}}"`
 
 Which is the same as the JavaScript json string! Although Python doesn't trim the whitespaces which is not an issue.
 
