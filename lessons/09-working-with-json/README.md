@@ -45,7 +45,9 @@ const platesToJson = JSON.stringify(plates);
 
 After using `JSON.stringify` on the object, `platesToJson` now contains the string:
 
-`"{\"plates\":{\"1\":{\"nodes\":[4,5,7,6],\"thickness\":50,\"is_meshed\":true,\"some_empty_value\":null}}}"`
+`"{"plates":{"1":{"nodes":[4,5,7,6],"thickness":50,"is_meshed":true,"some_empty_value":null}}}"`
+
+*Note:* If you see a bunch of backslashes scatter through this string when you print this yourself, they are just "escape characters", it won't affect the code.
 
 ---
 
@@ -53,7 +55,7 @@ After using `JSON.stringify` on the object, `platesToJson` now contains the stri
 
 Now in Python, `null` does not exist. Instead, the equivalent is `None`. Also, booleans are capitalised!
 
-Compare the difference between the Python dictionary and the JavaScript Object. In particular `null` vs `None` and `true` vs `True`.
+Compare the difference between this Python dictionary and the previous JavaScript Object. In particular `null` vs `None` and `true` vs `True`.
 
 ```py
 import json
@@ -74,7 +76,7 @@ plates_to_json = json.dumps(plates)
 
 But after using Python's `json` library denoted by the `import json` at above the dictionary, the variable `plates_to_json` becomes:
 
-`"{\"plates\":{\"1\":{\"nodes\":[4,5,7,6],\"thickness\":50,\"is_meshed\":true,\"some_empty_value\":null}}}"`
+`"{"plates": {"1": {"nodes": [4, 5, 7, 6], "thickness": 50, "is_meshed": true, "some_empty_value": null}}}"`
 
 Which is the same as the JavaScript json string! Although Python doesn't trim the whitespaces which is not an issue.
 
