@@ -13,9 +13,11 @@ It's easily readable for humans and very easy to "parse" for machines.
 JSON can be formed using two types of structures:
 
 - A collection of key/value pairs. Often referred to in other languages as an object, struct, dictionary, hash table, etc.
+    
     e.g: `"force_type": "point_load"` 
 
 - An ordered list of values. Often referred to in other languages as an array, list, vector, sequence, etc.
+    
     e.g: `"member_ids": [1, 4, 6]` - this is guaranteed to retain the order that the values are listed.
 
 ### What does it look like?

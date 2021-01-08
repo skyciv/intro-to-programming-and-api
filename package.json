@@ -1,0 +1,22 @@
+{
+  "name": "intro-to-programming-and-api",
+  "version": "1.0.0",
+  "description": "In this course we will take you from no programming experience to using our world class analysis and design api.",
+  "main": "file-structure-creator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyciv/intro-to-programming-and-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skyciv/intro-to-programming-and-api/issues"
+  },
+  "homepage": "https://github.com/skyciv/intro-to-programming-and-api#readme",
+  "dependencies": {
+    "skyciv": "^1.0.1"
+  }
+}
