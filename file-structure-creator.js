@@ -53,13 +53,15 @@ const createFile = (path, content = '') => {
  */
 const main = () => {
 	
-	return console.log(
-		`Content has been added to lessons now. back-up the data before running this function.`
-	);
+	// return console.log(
+	// 	`Content has been added to lessons now. back-up the data before running this function.`
+	// );
 
 	lessons.forEach((lesson, i) => {
 		const { title, description } = lesson;
-		const dirPath = `lessons/${i + 1}-${title}`;
+		const lessonNumber = i + 1
+		const lessonNumberString = lessonNumber < 10 ? `0${lessonNumber}` : `${lessonNumber}`
+		const dirPath = `lessons/${lessonNumberString}-${title}`;
 
 		createDir(dirPath);
 		createFile(`${dirPath}/README.md`, `# ${title.replace('-', ' ')}`);
