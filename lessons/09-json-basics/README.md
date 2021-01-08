@@ -28,18 +28,18 @@ Here is a small piece of JSON that we will see again in an upcoming lesson. This
 
 ```json
 {
-	"plates": {
-		"1": {
-			"nodes": [4, 5, 7, 6],
-			"thickness": 50,
-			"material_id": 1,
-			"rotZ": 0,
-			"type": "mindlin",
-			"offset": 65.6,
-			"state": "stress",
-			"is_meshed": true
-		}
-	}
+    "plates": {
+        "1": {
+            "nodes": [4, 5, 7, 6],
+            "thickness": 50,
+            "material_id": 1,
+            "rotZ": 0,
+            "type": "mindlin",
+            "offset": 65.6,
+            "state": "stress",
+            "is_meshed": true
+        }
+    }
 }
 ```
 
