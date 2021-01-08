@@ -30,14 +30,14 @@ We will include a boolean and an empty value to see the difference in the langua
 ### JavaScript Example
 ```javascript
 const plates = {
-	plates: {
-		1: {
-			nodes: [4, 5, 7, 6],
+    plates: {
+        1: {
+            nodes: [4, 5, 7, 6],
             thickness: 50,
             is_meshed: true,
             some_empty_value: null
-		},
-	},
+        },
+    },
 };
 
 const platesToJson = JSON.stringify(plates);
