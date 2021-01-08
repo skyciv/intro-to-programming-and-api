@@ -28,7 +28,7 @@ If you're still struggling with the difference between language objects and JSON
 We will include a boolean and an empty value to see the difference in the languages:
 
 ### JavaScript Example
-```js
+```javascript
 const plates = {
 	plates: {
 		1: {
