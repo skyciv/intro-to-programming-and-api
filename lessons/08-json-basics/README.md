@@ -13,16 +13,16 @@ It's easily readable for humans and very easy to "parse" for machines.
 JSON can be formed using two types of structures:
 
 - A collection of key/value pairs. Often referred to in other languages as an object, struct, dictionary, hash table, etc.
-    e.g: `"forceType": "point_load"` 
+    e.g: `"force_type": "point_load"` 
 
 - An ordered list of values. Often referred to in other languages as an array, list, vector, sequence, etc.
-    e.g: `"memberIds": [1, 4, 6]` - this is guaranteed to retain the order that the values are listed.
+    e.g: `"member_ids": [1, 4, 6]` - this is guaranteed to retain the order that the values are listed.
 
 ### What does it look like?
 
 JSON looks very similar to a JavaScript Object (essentially identical) or Python Dictionary.
 
-Here is a small piece of JSON that we will see again un upcoming lessons. This is a real piece of a SkyCiv API model Object
+Here is a small piece of JSON that we will see again in an upcoming lesson. This is a real piece of a SkyCiv API model Object
 
 ```json
 {
