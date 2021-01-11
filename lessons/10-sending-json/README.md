@@ -21,6 +21,7 @@ JSON uses a format that can easily be converted to a string (text) and also easi
 Coding languages typically have built in functions that will handle converting your objects to and from JSON.
 
 ---
+
 ## Examples
 
 If you're still struggling with the difference between language objects and JSON, hopefully the difference between the following JavaScript and Python examples will make it clear!

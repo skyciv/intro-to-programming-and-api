@@ -52,9 +52,9 @@ const createFile = (path, content = '') => {
  * Create file directory
  */
 const main = () => {
-	return console.log(
-		`Content has been added to lessons now. back-up the data before running this function.`
-	);
+	// return console.log(
+	// 	`Content has been added to lessons now. back-up the data before running this function.`
+	// );
 
 	lessons.forEach((lesson, i) => {
 		const { title, description } = lesson;
@@ -64,9 +64,9 @@ const main = () => {
 		const formattedTitle = title.replace(/-/g, ' ');
 
 		createDir(dirPath);
-		createFile(`${dirPath}/README.md`, `# ${formattedTitle}`);
-		createFile(`${dirPath}/index.js`, `/*\n${description}\n*/`);
-		createFile(`${dirPath}/index.ipynb`, ``);
+		// createFile(`${dirPath}/README.md`, `# ${formattedTitle}`);
+		// createFile(`${dirPath}/index.js`, `/*\n${description}\n*/`);
+		// createFile(`${dirPath}/index.ipynb`, ``);
 	});
 };
 
