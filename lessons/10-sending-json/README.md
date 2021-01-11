@@ -1,4 +1,4 @@
-# working with json
+# sending json
 
 ## How do we actually create JSON?
 
@@ -86,6 +86,10 @@ Which is the same as the JavaScript json string! Although Python doesn't trim th
 
 There are a few ways to make a HTTP request. We encourage using our NPM, Pip or NuGet package which you can [read more about here](https://skyciv.com/api/v3/docs/packages/). This page also walks you through setting up a project to use these packages. They reduce the amount of coding to a fraction of traditional ways.
 
+#### Using SkyCiv package
 The file [skycivCall.js](./skycivCall.js) shows you how to make the request using the `skyciv` NPM package.
+The file [skycivCall.py](./skycivCall.py) shows you how to make the request using the `skyciv` Pip package.
 
-The file [manualCall.js](./manualCall.js) shows you how to make this request using raw JavaScript. 
+#### Without SkyCiv package
+The file [manualCall.js](./manualCall.js) shows you how to make this request using raw JavaScript.
+The file [manualCall.py](./manualCall.py) shows you how to make this request using raw Python.

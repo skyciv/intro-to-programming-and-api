@@ -1,7 +1,21 @@
 const http = require('http');
 
-const data = { some: 'value' };
-const jsonData = JSON.stringify(data);
+const apiObject = {
+	auth: {
+		username: 'YOUR_SKYCIV_USERNAME',
+		key: 'YOUR_SKYCIV_API_KEY',
+	},
+	functions: [
+		{
+			function: 'S3D.session.start',
+			arguments: {
+				keep_open: false,
+			},
+		},
+	],
+};
+
+const jsonData = JSON.stringify(apiObject);
 
 const options = {
 	host: 'api.skyciv.com',
@@ -20,7 +34,8 @@ callback = function (response) {
 	});
 
 	response.on('end', function () {
-		console.log(JSON.parse(res));
+		const parsedResults = JSON.parse(res)
+		console.log(parsedResults);
 	});
 };
 
