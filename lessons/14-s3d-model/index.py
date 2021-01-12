@@ -20,10 +20,12 @@ api_object = {
 #  ========== THIS LESSON =======================================================================
 
 # Creating the s3d_model
+
 s3d_model = {
     "settings": {
-        "units": 'metric',
-        "vertical_axis": 'Y',
+        "units": "metric",
+        "vertical_axis": "Y",
+        "evaluation_points": 15
     },
     "nodes": {
         "1": {
@@ -42,43 +44,46 @@ s3d_model = {
             "node_A": 1,
             "node_B": 2,
             "section_id": 1,
-            "fixity_A": 'FFFfff',
-            "fixity_B": 'FFFfff',
+            "fixity_A": "FFFfff",
+            "fixity_B": "FFFfff",
         },
     },
-    'sections': {
-        "load_section": ['Australian', 'Steel (300 Grade)', 'Universal beams', '310 UB 32.0'],
-        "material_id": 1,
+    "sections": {
+        "1": {
+            "load_section": ["Australian", "Steel (300 Grade)", "Universal beams", "150 UB 18.0"],
+            "material_id": 1
+        }
     },
     "materials": {
         "1": {
-            "name": 'Structural Steel',
+            "name": "Structural Steel",
             "density": 7850,
             "elasticity_modulus": 200000,
             "poissons_ratio": 0.27,
             "yield_strength": 260,
             "ultimate_strength": 410,
-            "class": 'steel',
+            "class": "steel",
         },
     },
     "supports": {
         "1": {
             "node": 1,
-            "restraint_code": 'FFFffr',
+            "restraint_code": "FFFfff",
         },
         "2": {
             "node": 2,
-            "restraint_code": 'RFFffr',
+            "restraint_code": "RFFffr",
         },
     },
     "point_loads": {
         "1": {
-            "type": 'm',
+            "type": "m",
             "member": 1,
             "position": 30,
             "x_mag": 0,
             "y_mag": -10,
             "z_mag": 0,
+            "load_group": "LG1"
         },
     },
 }

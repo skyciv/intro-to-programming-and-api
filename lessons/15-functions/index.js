@@ -22,6 +22,7 @@ const s3dModel = {
 	settings: {
 		units: 'metric',
 		vertical_axis: 'Y',
+		evaluation_points: 15,
 	},
 	nodes: {
 		1: {
@@ -45,8 +46,10 @@ const s3dModel = {
 		},
 	},
 	sections: {
-		load_section: ['Australian', 'Steel (300 Grade)', 'Universal beams', '310 UB 32.0'],
-		material_id: 1,
+		1: {
+			load_section: ['Australian', 'Steel (300 Grade)', 'Universal beams', '150 UB 18.0'],
+			material_id: 1,
+		},
 	},
 	materials: {
 		1: {
@@ -63,7 +66,7 @@ const s3dModel = {
 	supports: {
 		1: {
 			node: 1,
-			restraint_code: 'FFFffr',
+			restraint_code: 'FFFfff',
 		},
 		2: {
 			node: 2,
@@ -78,6 +81,7 @@ const s3dModel = {
 			x_mag: 0,
 			y_mag: -10,
 			z_mag: 0,
+			load_group: 'LG1',
 		},
 	},
 };

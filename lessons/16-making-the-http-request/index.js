@@ -1,4 +1,5 @@
 const skyciv = require('skyciv');
+const fs = require('fs');
 
 // ========== FROM PREVIOUS LESSON ==============================================================
 // Create auth object
@@ -24,6 +25,7 @@ const s3dModel = {
 	settings: {
 		units: 'metric',
 		vertical_axis: 'Y',
+		evaluation_points: 15,
 	},
 	nodes: {
 		1: {
@@ -47,8 +49,10 @@ const s3dModel = {
 		},
 	},
 	sections: {
-		load_section: ['Australian', 'Steel (300 Grade)', 'Universal beams', '310 UB 32.0'],
-		material_id: 1,
+		1: {
+			load_section: ['Australian', 'Steel (300 Grade)', 'Universal beams', '150 UB 18.0'],
+			material_id: 1,
+		},
 	},
 	materials: {
 		1: {
@@ -65,7 +69,7 @@ const s3dModel = {
 	supports: {
 		1: {
 			node: 1,
-			restraint_code: 'FFFffr',
+			restraint_code: 'FFFfff',
 		},
 		2: {
 			node: 2,
@@ -80,6 +84,7 @@ const s3dModel = {
 			x_mag: 0,
 			y_mag: -10,
 			z_mag: 0,
+			load_group: 'LG1',
 		},
 	},
 };
@@ -127,9 +132,13 @@ apiObject['functions'] = functions;
 
 // Import the skyciv package at the top of this script
 
-// Create a function to handle the response 
+// Create a function to handle the response
 function apiCallback(res) {
-    // NEXT LESSON
+	// Add the response to a file for inspection
+	// Import the fs module at the top of the file
+	fs.writeFileSync('jsOutput.json', JSON.stringify(res));
+
+	// NEXT LESSON
 	console.log(res.response.status);
 }
 
