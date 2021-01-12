@@ -1,3 +1,7 @@
+/*
+
+*/ const skyciv = require('skyciv');
+
 // ========== FROM PREVIOUS LESSON ==============================================================
 // Create auth object
 const auth = {
@@ -82,8 +86,6 @@ const s3dModel = {
 	},
 };
 
-//  ========== THIS LESSON =======================================================================
-
 // Creating the functions array
 const functions = [
 	{
@@ -122,3 +124,14 @@ const functions = [
 
 // Adding the functions array to the api object
 apiObject['functions'] = functions;
+
+// Import the skyciv package at the top of this script
+
+// Create a function to handle the response
+function apiCallback(res) {
+	// ========== THIS LESSON =======================================================================
+    
+}
+
+// Make the call!
+skyciv.request(apiObject, apiCallback);

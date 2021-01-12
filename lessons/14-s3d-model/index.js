@@ -16,9 +16,9 @@ const apiObject = {
 	auth: auth,
 	options: options,
 };
-// ==============================================================================================
-// Creating an s3d_model
+//  ========== THIS LESSON =======================================================================
 
+// Creating the s3d_model
 const s3d_model = {
 	settings: {
 		units: 'metric',

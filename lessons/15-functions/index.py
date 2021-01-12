@@ -17,7 +17,7 @@ api_object = {
     "options": options
 }
 
-# Creating an s3d_model
+# Creating the s3d_model
 s3d_model = {
     "settings": {
         "units": 'metric',
@@ -81,4 +81,43 @@ s3d_model = {
     },
 }
 
-# ==============================================================================================
+#  ========== THIS LESSON =======================================================================
+
+# Creating the functions array
+functions = [
+    {
+        "function": "S3D.session.start",
+        "arguments": {
+            "keep_open": False
+        }
+    },
+    {
+        "function": "S3D.model.set",
+        "arguments": {
+            "s3d_model": s3d_model
+        }
+    },
+    {
+        "function": "S3D.model.solve",
+        "arguments": {
+            "analysis_type": "linear",
+        }
+    },
+    {
+        "function": "S3D.design.member.check",
+        "arguments": {
+            "design_code": "AS_4100-1998",
+            "s3d_model": s3d_model,
+        }
+    },
+    {
+        "function": "S3D.file.save",
+        "arguments": {
+            "name": "simple-beam-test",
+            "path": "api/intro-to-programming/"
+        }
+    }
+]
+
+# Adding the functions array to the api object
+api_object["functions"] = functions
