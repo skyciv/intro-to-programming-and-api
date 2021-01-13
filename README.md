@@ -2,7 +2,7 @@
 
 In this course we will take you from no programming experience to using our world class analysis and design api.
 
-### How is this course different
+### How this course is different
 
 Too often programming courses use poor examples such as looping through an array of people's names and printing them to the console. As Structural Engineers, we understand this isn't ideal to help these foreign concepts sink in. 
 
@@ -13,8 +13,8 @@ Instead, we are going to take you from the very beginning using real life engine
 We've seperated each video lesson into a folder as seen in this repository. This will provide you with the code that you saw in each lesson for future reference.
 
 #### Section 1
-1.  Variables
-2.  Arrays
+1.  Variables & Operations
+2.  Collections
 3.  Loops
 4.  Flow Control (If and Switch statements)
 5.  Functions
