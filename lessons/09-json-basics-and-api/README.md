@@ -1,6 +1,6 @@
-# json basics
+# json basics and api
 
-### What is JSON?
+## What is JSON?
 
 JSON is an acronym for JavaScript Object Notation. It is not to be confused with an `object` or `dictionary`.
 
@@ -72,3 +72,21 @@ If we were to add another plate with an ID of `"2"`, it would be a child of the 
 It's also important to see that we had to add a comma `","` after the first item `"1"`. This indicates we are adding more objects.
 
 A great way to confirm you are formatting your JSON correctly is by installing the VSCode plugin "Prettier". Paste this into the search bar in the VSCode Extensions tab: `esbenp.prettier-vscode`. Prettier will format the document depending on what file type you have selected in the far bottom right of the VSCode editor. This will default to the file extension such as `.py` or `.js`.
+
+## What is an API?
+An Application Programming Interface (API) is a way of communicating with a server from any coding environment.
+
+Think of a website that compares multiple airline prices. When you go to their website and ask: 
+
+> Hey, I want to book a flight to this place at this time. What's the cheapest option?
+
+where do they get all this information? Have you ever thought about this?
+
+The answer is that every airline they check, has an API. This means the airline has set up a URL that anyone can send some data to describing their question and it will response with the requested data.
+
+So the comparison website doesn't navigate to each website and look at the prices for your flight, instead they ask the question to the airline's API!
+
+### SkyCiv API
+So what if you wanted to solve a structural model without opening any program or website? Well you can now make a peice of data which describes a structural model and send it to the SkyCiv API! It can perform loads of actions and response with various data for you to work with.
+
+<img src='./api-diagram.png'/>

@@ -1,4 +1,4 @@
-# interpreting the response
+# receiving json
 
 To extract data from the response, we first need to "parse" the JSON response. The JSON libraries that we previously used have a method to parse this infomation. These methods take the json response and converts it to an object (or dictionary). Note that the terms object and dictionary may be used interchangeably from here.
 

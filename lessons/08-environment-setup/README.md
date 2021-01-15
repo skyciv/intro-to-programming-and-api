@@ -1,6 +1,6 @@
-# vscode
+# environment-setup
 
-## What is VSCode
+## VSCode
 
 Visual Studio Code (VSCode) is essentially a supercharged text editor. It provides a bunch of great tools to help us code more efficiently.
 
@@ -8,7 +8,7 @@ There are loads of great extensions that are available for VSC. We will look at 
 
 Download: https://code.visualstudio.com/download
 
-## What is node.js
+## node.js
 
 Traditionally JavaScript only worked in the browser. To allow the use of JavaScript for a server, node.js was created. It allows us to write programs that will run in a console.
 

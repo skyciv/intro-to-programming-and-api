@@ -19,19 +19,18 @@ We've seperated each video lesson into a folder as seen in this repository. This
 4.  Flow Control (If and Switch statements)
 5.  Functions
 6.  Objects and Properties
-7.  Various Languages
+7.  Other Languages
 
 #### Section 2
-8.  JSON basics
-9.  Working with JSON
-10. Extracting values from JSON
+8.  Setting up your environment
+9.  JSON basics
+10. Sending JSON
 
 #### Section 3
-11. Setting up VSCode and Node.js
-12. The SkyCiv API Object Anatomy
-13. Building the API Object (`auth` and `options`)
-14. Building the API Object (`s3d_model`)
-15. Building the API Object (`functions`)
-16. Building the API Object (adjusting settings)
-17. Making the HTTP request
-18. Interpretting the response
+11. Interpreting the respone
+12. The SkyCiv API Object
+13. The auth and options objects
+14. The s3d_model object
+15. API functions
+16. Making the HTTP request
+17. 
