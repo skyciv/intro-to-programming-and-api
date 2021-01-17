@@ -15,7 +15,7 @@ api_object = {
     ]
 }
 
-options = {
+options = {  # This is the default options so you wouldn't need to actually include this.
     'version': 3,
     'http_or_https': 'https'
 }

@@ -15,11 +15,9 @@ const apiObject = {
 	],
 };
 
-const jsonData = JSON.stringify(apiObject);
-
 const callback = function (res) {
 	const resObject = JSON.parse(res);
 	console.log(resObject);
 };
 
-skyciv.request(jsonData, callback);
+skyciv.request(apiObject, callback);
