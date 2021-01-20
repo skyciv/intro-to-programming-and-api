@@ -13,8 +13,8 @@ Instead, we are going to take you from the very beginning using real life engine
 We've seperated each video lesson into a folder as seen in this repository. This will provide you with the code that you saw in each lesson for future reference.
 
 #### Section 1
-    0a.	Introduction
-    /0b.	Our Engineering problem
+0.  (a) Introduction
+0.  (b) Our Engineering problem
 1.  Variables & Operations
 2.  Collections
 3.  Loops
