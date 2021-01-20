@@ -4,13 +4,13 @@
 		"msg": "Model was successfully saved to your SkyCiv cloud storage in the folder api/intro-to-programming/. You can access this file from your SkyCiv Dashboard, or directly from https://platform.skyciv.com/structural?preload_name=simple-beam-test&preload_path=api/intro-to-programming/",
 		"status": 0,
 		"function": "S3D.file.save",
-		"last_session_id": "wi5t6Y3tUUvV6fKu92NpXDSy2GlnOITPPfem14Adol7Bz4vAoXInBGhxihGWXLw4_1",
-		"monthly_api_credits": { "quota": 6000, "total_used": 40, "used_this_call": 2 }
+		"last_session_id": "cSkkOp9FJPjzOfuUNuMKiLx0fPXiraewualkdsfYHBPLsHMlW13LBBey24Sac4Jf_1",
+		"monthly_api_credits": { "quota": 6000, "total_used": 57, "used_this_call": 2 }
 	},
 	"functions": [
 		{
-			"session_id": "wi5t6Y3tUUvV6fKu92NpXDSy2GlnOITPPfem14Adol7Bz4vAoXInBGhxihGWXLw4_1",
-			"session_expiry_time": 1610426021,
+			"session_id": "cSkkOp9FJPjzOfuUNuMKiLx0fPXiraewualkdsfYHBPLsHMlW13LBBey24Sac4Jf_1",
+			"session_expiry_time": 1610949421,
 			"msg": "S3D session successfully started.",
 			"status": 0,
 			"function": "S3D.session.start",
@@ -916,14 +916,14 @@
 					"worstlc": { "1": "#1" },
 					"displacement": { "1": 0.18452200000000002 }
 				},
-				"html_summary_link": "https://solver.skyciv.com/temp/view_report_hvxqKB8iLq3HvdE5.php",
-				"html_download_link": "https://solver.skyciv.com/temp/download_html_report_hvxqKB8iLq3HvdE5.php",
-				"pdf_download_link": "https://solver.skyciv.com/temp/download_report_hvxqKB8iLq3HvdE5.php",
+				"html_summary_link": "https://solver.skyciv.com/temp/view_report_6hnKy4jw8Dq996H3.php",
+				"html_download_link": "https://solver.skyciv.com/temp/download_html_report_6hnKy4jw8Dq996H3.php",
+				"pdf_download_link": "https://solver.skyciv.com/temp/download_report_6hnKy4jw8Dq996H3.php",
 				"reports": {
 					"1": {
-						"html_view_link": "https://solver.skyciv.com/temp/view_report_hvxqKB8iLq3HvdE5_0.php",
-						"html_download_link": "https://solver.skyciv.com/temp/download_html_report_hvxqKB8iLq3HvdE5_0.php",
-						"pdf_download_link": "https://solver.skyciv.com/temp/download_report_hvxqKB8iLq3HvdE5_0.php"
+						"html_view_link": "https://solver.skyciv.com/temp/view_report_6hnKy4jw8Dq996H3_0.php",
+						"html_download_link": "https://solver.skyciv.com/temp/download_html_report_6hnKy4jw8Dq996H3_0.php",
+						"pdf_download_link": "https://solver.skyciv.com/temp/download_report_6hnKy4jw8Dq996H3_0.php"
 					}
 				},
 				"summary": {

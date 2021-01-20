@@ -15,13 +15,8 @@ api_object = {
     ]
 }
 
-options = {  # This is the default options so you wouldn't need to actually include this.
-    'version': 3,
-    'http_or_https': 'https'
-}
-
 # This next line will print an error as the api_object variable above is incorrect.
-results = skyciv.request(api_object, options)
+results = skyciv.request(api_object)
 
 with open('pyOutput.json', 'w') as f:
     print(results, file=f)

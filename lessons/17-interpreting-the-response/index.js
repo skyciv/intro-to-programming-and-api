@@ -4,8 +4,8 @@ const fs = require('fs');
 // ========== FROM PREVIOUS LESSON ==============================================================
 // Create auth object
 const auth = {
-	username: 'steve.richardson@skyciv.com',
-	key: 'xgVD63hAGbQ0b5KTHFlNMii2PcxbZhAVGkDBhfDqNnlkqGproea2ifnY7APn4lKB',
+	username: 'YOUR_SKYCIV_USERNAME',
+	key: 'YOUR_SKYCIV_API_KEY',
 };
 
 // Create options object - this is the default values so you could instead omit the entire object

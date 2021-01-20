@@ -3,8 +3,8 @@ import skyciv
 # ========== FROM PREVIOUS LESSON ==============================================================
 # Create auth object
 auth = {
-    "username": "steve.richardson@skyciv.com",
-    "key": "xgVD63hAGbQ0b5KTHFlNMii2PcxbZhAVGkDBhfDqNnlkqGproea2ifnY7APn4lKB",
+    username: 'YOUR_SKYCIV_USERNAME',
+    key: 'YOUR_SKYCIV_API_KEY',
 }
 
 # Create options object - this is the default values so you could instead omit the entire object
@@ -137,7 +137,7 @@ with open("lessons/17-interpreting-the-response/pyOutput.json", "w") as f:
 
 # ========== THIS LESSON =======================================================================
 
-# Modern way to loop an array - use the array method forEach.
+# Loop the functions array
 
 for fn in res["functions"]:
 

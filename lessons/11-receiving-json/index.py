@@ -2,8 +2,8 @@ import skyciv
 
 api_object = {
     "auth": {
-        "username": "YOUR_SKYCIV_USERNAME",
-        "key": "YOUR_SKYCIV_API_KEY"
+        username: 'YOUR_SKYCIV_USERNAME',
+        key: 'YOUR_SKYCIV_API_KEY',
     },
     "functions": [
         {
@@ -16,7 +16,7 @@ api_object = {
 }
 
 # This next line will print an error as the data variable above is incorrect.
-results = skyciv.request(api_object)
+results = skyciv.request(api_object, {})
 
 response = results["response"]
 

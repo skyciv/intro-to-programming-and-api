@@ -3,8 +3,8 @@ import skyciv
 # ========== FROM PREVIOUS LESSON ==============================================================
 # Create auth object
 auth = {
-    "username": "YOUR_SKYCIV_USERNAME",
-    "key": "YOUR_SKYCIV_API_KEY"
+    username: 'YOUR_SKYCIV_USERNAME',
+    key: 'YOUR_SKYCIV_API_KEY',
 }
 
 # Create options object - this is the default values so you could instead omit the entire object
@@ -131,7 +131,7 @@ api_object["functions"] = functions
 # Import the skyciv package at the top of this script
 
 # Make the call!
-res = skyciv.request(api_object)
+res = skyciv.request(api_object, {})
 
 # Add the response to a file for inspection
 with open("pyOutput.json", "w") as f:
