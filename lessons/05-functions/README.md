@@ -5,12 +5,12 @@
 Remembering our force against capacity calculation:
 
 ```python
-fcap = 100
-ftot = 10
+f_cap = 100
+f_tot = 10
 
-if ftot > fcap:
+if f_tot > f_cap:
 	print("bearing force exceeds the capacity!")
-elif ftot == fcap:
+elif f_tot == f_cap:
 	print("bearing force is JUST within capacity")
 else:
 	print("bearing force is within capacity")
@@ -19,12 +19,12 @@ else:
 our moment against capacity check would look like:
 
 ```python
-mcap = 100
-mtot = 10
+m_cap = 100
+m_tot = 10
 
-if mtot > mcap:
+if m_tot > m_cap:
 	print("overturning moment exceeds the capacity!")
-elif mtot == mcap:
+elif m_tot == m_cap:
 	print("overturning moment is JUST within capacity")
 else:
 	print("overturning moment is within capacity")
@@ -44,7 +44,15 @@ The variables in the parentheses `()` are the function *arguments* - the values 
 The indented text on the next line is the function *body*, which is the piece of code we want to run every time we use the function.
 
 ```python
-def CheckAgainstCapacity(tot, cap):
+def check_against_capacity(tot, cap):
+"""
+Checks a capacity and returns a string explaining the result
+Args:
+	tot: Total design force
+	cap: Allowable capacity
+Return:
+	A human readable string defining the outcome of the check
+"""
 	if tot > cap:
 		return "exceeds the capacity!"
 	elif tot == cap:
@@ -56,18 +64,18 @@ def CheckAgainstCapacity(tot, cap):
 We use the function by 'calling' it. We do this simply by using it in code.
 Let's do this for the force against capacity check
 ```python
-fcap = 100
-ftot = 10
-output = "bearing force " + CheckAgainstCapacity(ftot, fcap)
+f_cap = 100
+f_tot = 10
+output = "bearing force " + check_against_capacity(f_tot, f_cap)
 print(output)
 ```
 
 We can use the function again, to check the moment against the capacity:
 
 ```python
-mcap = 100
-mtot = 10
-output = "moment " + CheckAgainstCapacity(mtot, mcap)
+m_cap = 100
+m_tot = 10
+output = "moment " + check_against_capacity(m_tot, m_cap)
 print(output)
 ```
 

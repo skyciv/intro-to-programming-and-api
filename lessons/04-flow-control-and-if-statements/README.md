@@ -6,20 +6,20 @@ To do this, we can use an `if` statement, and alert the user if the foundation i
 
 Let's start by defining the force capacity of the foundation:
 ```python
-fcap = 100 # set this value to whatever you want
+f_cap = 100 # set this value to whatever you want
 ```
 We also have the value of total force we calculated in the previous lessons:
 ```python
-ftot = 10  # the value we calculated ealier
+f_tot = 10  # the value we calculated ealier
 ```
 With those 2 values, our if statement looks like:
 ```python
-if ftot > fcap:
+if f_tot > f_cap:
 	print("bearing force exceeds the capacity!")
 ```
 we can also add an "else if" statement using `elif`:
 ```python
-elif ftot == fcap:
+elif f_tot == f_cap:
 	print("bearing force is JUST within capacity")
 ```
 
@@ -35,9 +35,9 @@ else:
 ```
 all together that looks like:
 ```python
-if ftot > fcap:
+if f_tot > f_cap:
 	print("bearing force exceeds the capacity!")
-elif ftot == fcap:
+elif f_tot == f_cap:
 	print("bearing force is JUST within capacity")
 else:
 	print("bearing force is within capacity")
@@ -56,9 +56,9 @@ So, rather than comparing these values using `==`, we should compare their diffe
 ```python
 
 # compare the difference in force to a small tolerance
-if (fcap - ftot) > 1.0E-6:
+if (f_cap - f_tot) > 1.0E-6:
 	print("bearing force exceeds the capacity!")
-else if (fcap - ftot) * 0.8 > 1.0E-6:
+else if (f_cap - f_tot) * 0.8 > 1.0E-6:
 	print("bearing force is close to capacity")
 else:
 	print("bearing force is well within capacity")

@@ -2,6 +2,8 @@
 
 ## Our starting data
 
+Let's just take a moment to remind ourselves of the starting data:
+
 forces
 ```python
 f1 = 5.6
@@ -26,7 +28,7 @@ d5 = 3.0
  
  In this case, we will assign the sum of the 5 forces we have:
  ```python
-totalForce = f1 + f2 + f3 + f4 + f5
+total_force = f1 + f2 + f3 + f4 + f5
 ```
  NOTE as well, that we are getting the value of forces f1 through f5.
 
@@ -35,7 +37,7 @@ totalForce = f1 + f2 + f3 + f4 + f5
  We can then show the user this value by printing it to the command line.
 
  ```python
-print('The total force is: ' + totalForce)
+print('The total force is: ' + str(total_force))
 ```
 
  to calculate the moment about the midpoint, we first find the midpoint from the smallest and largest distances:

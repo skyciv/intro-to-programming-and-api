@@ -1,7 +1,7 @@
 # Objects
 
 So far we've worked with simple data. Storing single values in variables or with other values in a collection.
-But the data that comes back from modern structural analysis and design software is usually much more complicated than this.
+But the data that comes back from modern structural analysis and design software is usually much more sophisticated than this.
 
 In our case, for each force along the bottom of the wall, we'd get back 3 components of the force, corresponding to all 3 degrees of freedom.
 

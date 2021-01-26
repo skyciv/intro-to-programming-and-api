@@ -4,13 +4,9 @@ In the previous example, we used 5 separate values for the forces along the base
 
 Collections allow us to store multiple values in a single variable, and then manipulate those values.
 
-	Every programming language has various types of collections, and each collection has a specific purpose.
-	The characteristics which differ between collections are things like:
-	(i)   whether the values in the collections are ordered (and preserve the order between operations)
-	(ii)  whether a value can appear more than once in the collection (whether duplicate values are permitted)
-	(iii) whether values can be added or removed from the collection
-	Some examples of collections (from various languages) are:
-	array, list, arraylist, dictionary, hashset, stack, concurrentbag, etc.
+> Every programming language has various types of collections, and each collection has a specific purpose. The characteristics which differ between collections are things like: <dl></dl><dt>(i)   whether the values in the collections are ordered (and preserve the order between operations)</dt><dt>(ii)  whether a value can appear more than once in the collection (whether duplicate values are permitted)</dt><dt>(iii) whether values can be added or removed from the collection</dt></dl>
+
+>Some examples of collections (from various languages) are: array, list, arraylist, dictionary, hashset, stack, concurrentbag, etc.<br>
 
 We'll stick with lists for now (the simplest collection in python), because they are more than adequate for our current application.
 
@@ -63,12 +59,12 @@ mid = (d[-1] - d[0]) / 2.0	# NOTE how we use the -1 index to get the last item i
 mtot = f[0] * (mid - d[0]) + f[1] * (mid - d[1]) + f[2] * (mid - d[2]) + f[3] * (mid - d[3]) + f[4] * (mid - d[4])
 ```
 
-## BONUS content
+## Manipulating the content of lists
 
 We can also add, remove and insert values in the list, using append, remove, pop and insert:
 ```python
-f.append(1.7)		# 1.7 is the new value that we want to add
-f.remove(3.6) 		# 3.6 is the value we want to find in the list and then remove
-f.pop(-1) 			# -1 is the index of the value we want to remove - in this case, the last value in the list
-f.insert(0, 5.9)	# 0 is the index at which we want to insert the value, 5.9 is the value we want to insert
+f.append(1.7)		# adds an item to the end of the list. Here, 1.7 is the new item that we want to add.
+f.remove(3.6) 		# removes the first matching item in the list. Here, 3.6 is the item we want to find in the list and then remove.
+f.pop(2) 			# removes the item from the list at the index. Here, 2 is the index of the item we want to remove. The last item can be removed by omitting the index or supplying -1.
+f.insert(0, 5.9)	# 0 is the index at which we want to insert the item, 5.9 is the item we want to insert.
 ```
