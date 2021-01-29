@@ -25,7 +25,7 @@ elif f_tot == f_cap:
 
 If the first criterion is met, the `elif` condition will not be checked. If the first criterion is **not** met, the criterion in `elif` will be checked next.
 
-	NOTE that when we want to check whether a value equals another, we use two '=' signs. This distinguishes checking equality from assigning a value to the variable.
+> NOTE that when we want to check whether a value equals another, we use two '=' signs. This distinguishes checking equality from assigning a value to the variable.
 
 Finally, we can add an else statement. If none of the conditions in `if` or `elif` are met
 this code block will be processed.
@@ -45,7 +45,7 @@ else:
 
 ## Accuracy of calculations on computers
 
-One thing to note when comparing non-integer numbers in programming code, is _floating point precision_<a id = "Wikipedia" href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">.
+One thing to note when comparing non-integer numbers in programming code, is <a href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">floating point precision</a>.
 What this basically means, is that numbers can be guaranteed to be accurate to only 15 significant figures.
 So you could define a variable like 10.0, but when saved to memory, this variable will get slightly distorted. When you subsequently print this variable, you could see something like: 10.0000000000004.
 

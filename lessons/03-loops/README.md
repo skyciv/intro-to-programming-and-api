@@ -13,7 +13,8 @@ We have 5 items in our list, so we want to perform our calculation for force and
 
 Run a loop with 5 iterations to calculate the total force:
 ```python
-for i in [0, 1, 2, 3, 4]:
+indexes = [0, 1, 2, 3, 4]
+for i in indexes:
 	f_tot += f[i]	# sum the forces (remember our += operator from Lesson 1)
 ```
 
@@ -27,7 +28,7 @@ f_tot = f[0] + f[1] + f[2] + f[3] + f[4]
 We can do the same thing for the total moment.
 First however, for efficiency, let's calculate the midpoint before running the loop:
 ```python
-mid = d[-1] - d[0]
+mid = (d[-1] - d[0]) / 2
 ```
 Furthermore, rather than writing out the indexes we want to use,
 let's use the native python function 'range' to construct the list of indexes for us:
@@ -40,7 +41,7 @@ for i in range(5):
 m_tot = f[0] * (mid - d[0]) + f[1] * (mid - d[1]) + f[2] * (mid - d[2]) + f[3] * (mid - d[3]) + f[4] * (mid - d[4])
 ```
 
-The range function allows to construct a list of indexes to loop through. We can define the start value of the loop, the value at which we want it to stop (and which should not be executed), and the 'step' size - the difference between one index and the next. 
+The range function allows us to construct a list of indexes to loop through. We can define the _start_ value of the loop, the value at which we want it to _stop_ (and which should not be executed), and the _step_ size - the difference between one index and the next. 
 ```python
 range(0, 5, 1) = [0, 1, 2, 3, 4] 	# start at 0, stop at (before) 5, step by 1
 range(5) = [0, 1, 2, 3, 4] 			# because the start value and step size are optional, we can omit them and get the same list

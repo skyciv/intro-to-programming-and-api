@@ -26,9 +26,9 @@ Below is a `class` called _force_, with 3 `properties`, 1 for each component of 
 ```python
 class Force:
     def __init__(self, x, y, z):
-    self.X = x
-    self.Y = y
-    self.Z = z
+        self.X = x
+        self.Y = y
+        self.Z = z
 ```
 
 We can define a variable representing one instance of that class like so:
