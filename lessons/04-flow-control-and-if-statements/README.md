@@ -57,9 +57,9 @@ So, rather than comparing these values using `==`, we should compare their diffe
 
 # compare the difference in force to a small tolerance
 if (f_cap - f_tot) > 1.0E-6:
-	print("bearing force exceeds the capacity!")
-else if (f_cap - f_tot) * 0.8 > 1.0E-6:
-	print("bearing force is close to capacity")
+	print("force exceeds the capacity!")
+else if abs(f_cap - f_tot) < 1.0E-6:
+	print("force is equal to capacity")
 else:
-	print("bearing force is well within capacity")
+	print("force is within capacity")
 ```

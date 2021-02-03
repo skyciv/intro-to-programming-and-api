@@ -55,8 +55,8 @@ Return:
 """
 	if tot > cap:
 		return "exceeds the capacity!"
-	elif tot == cap:
-		return "is JUST within capacity"
+	elif abs(tot - cap) < 1.0E-6:
+		return "is equal to capacity"
 	else:
 		return "is within capacity"
 ```

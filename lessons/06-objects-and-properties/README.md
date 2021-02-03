@@ -18,7 +18,7 @@ A clearer and more flexible way to hold this data, is with an `object`. The most
 ## Using Classes
 
 For our application, it's most useful for us to learn how to _use_ classes before we learn the ins and outs of creating them.<br>
-Nevertheless, we need to see the class definition and instantiation (more on those words later) to know what's going on.<br>
+Nevertheless, we need to see the class definition and instantiation (see 💡 below) to know what's going on.<br>
 Below is a `class` called _force_, with 3 `attributes`, 1 for each component of that force in the 3 DOFs.<br>
 
 ```python
@@ -38,7 +38,7 @@ We can define a variable representing one _instance_ of that class like so:
 f1 = Force(-0.3, 0.8, 5.6)
 ```
 
->💡 The class `definition` is like a blueprint for the class. It represents the outline of what data is required, but doesn't represent the _actual_ set of values (much like in algebra, where a letter indicates a variable that can take on any value).<br>The actual set of values is represented by an `instance` of the class. If we have multiple forces, each force is an `instance` of the force class.<br>Creating an `instance` is called `instantiation`, but most programmers will refer to creating an instance of the class, and setting the _initial_ values, as `initializing`.
+>💡 The class `definition` is like a blueprint for the class. It represents the outline of what data is required, but doesn't represent the _actual_ set of values (much like in algebra, where a letter indicates a variable that can take on any value).<br>The actual set of values is represented by an `instance` of the class. If we have multiple forces, each force is an `instance` of the force class.<br>Creating an `instance` is called `instantiation`, but programmers will often refer to creating an instance of the class, and setting the _initial_ values, as `initializing`.
 
 And we can get values from the class by using the variable and the _attribute_ we want to get, linked by a dot:
 
