@@ -39,7 +39,7 @@ So let's take our engineering problem, and draw up a simple diagram expressing w
 <img src="wall-reactions.svg">
 
 We have our wall, with 5 support nodes along the base and their reaction forces. We also have the length of the wall along the base, and we know that the 
-> _For this part of the course, I've just made up these values. Later on, we will look at a real SkyCiv model and learn how to extract the data we need, such as the nodal reactions and positions_.
+>For this part of the course, I've just made up these values. Later on, when you've learned how to work with the SkyCiv API, have a go at using the code we write in these lessons on a real SkyCiv model!
 
 With that drawn up, it's pretty clear we'll need a list of the nodal reaction forces:
 

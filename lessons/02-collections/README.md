@@ -1,17 +1,17 @@
- Collections
+# Collections
 
-In the previous example, we used 5 separate values for the forces along the base of the wall (f1 to f5), and 5 separate values for the distances of these forces (d1 to d5).
+In the previous example, we used 5 separate values for the forces along the base of the wall (f1 to f5), and 5 separate values for the distances of these forces (d1 to d5) from the left hand side.
 
 Collections allow us to store multiple values in a single variable, and then manipulate those values.
 
-> Every programming language has various types of collections, and each collection has a specific purpose. The characteristics which differ between collections are things like: <dl></dl><dt>(i)   whether the values in the collections are ordered (and preserve the order between operations)</dt><dt>(ii)  whether a value can appear more than once in the collection (whether duplicate values are permitted)</dt><dt>(iii) whether values can be added or removed from the collection</dt></dl>
+> Every programming language has various types of collections, and each collection has a specific purpose. The characteristics which differ between collections are things like: <dl></dl><dt>(i) whether the values in the collections are ordered (and preserve the order between operations)</dt><dt>(ii)  whether a value can appear more than once in the collection (whether duplicate values are permitted)</dt><dt>(iii) whether values can be added or removed from the collection</dt></dl>
 
->Some examples of collections (from various languages) are: array, list, arraylist, dictionary, hashset, stack, concurrentbag, etc.<br>
+> Some examples of collections (from various languages) are: `array`, `list`, `arraylist`, `dictionary`, `hashset`, `stack`, `concurrentbag`, etc.<br>
 
 We'll stick with lists for now (the simplest collection in python), because they are more than adequate for our current application.
 
 A list is an ordered collection of values.
-We define a list (as a variable) using square brackets []:
+We define a list (as a variable) using square brackets `[]`:
 ```python
 f = [5.6, 4.3, 3.6, 2.8, 4.1]		# forces
 d = [0.0, 0.75, 1.5, 2.25, 3.0]		# distances
@@ -20,14 +20,14 @@ We can get a value from the list by using its index to 'look it up':
 ```python
 f4 = f[3]
 ```
-NOTE the indexing starts from 0 - the first value in the list is `f[0]`, so:
+Tthe indexing starts from 0, so the first value in the list is `f[0]`:
 ```python
 f1 = f[0]
 f2 = f[1]
 f3 = f[2]
 # and so on ...
 ```
-NOTE in python, we can get values starting from the end of the list, using negative numbers:
+A nice feature in python is that we can get values starting from the end of the list, using negative numbers:
 ```python
 f5 = f[-1]
 ```
