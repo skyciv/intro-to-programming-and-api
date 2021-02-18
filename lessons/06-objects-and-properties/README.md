@@ -17,7 +17,7 @@ A clearer and more flexible way to hold this data, is with an `object`. The most
 
 ## Using Classes
 
-For our application, it's most useful for us to learn how to _use_ classes before we learn the ins and outs of creating them.<br>
+For our application, it's most useful for us to learn how to _use_ classes rather than the ins and outs of creating them.<br>
 Nevertheless, we need to see the class definition and instantiation (see 💡 below) to know what's going on.<br>
 Below is a `class` called _force_, with 3 `attributes`, 1 for each component of that force in the 3 DOFs.<br>
 
@@ -32,15 +32,15 @@ class Force:
       return str(self.X) + ', ' + str(self.Y) + ', ' + str(self.Z)
 ```
 
-We can define a variable representing one _instance_ of that class like so:
+We can define a variable representing one `instance` of that class like so:
 
 ```python
 f1 = Force(-0.3, 0.8, 5.6)
 ```
 
->💡 The class `definition` is like a blueprint for the class. It represents the outline of what data is required, but doesn't represent the _actual_ set of values (much like in algebra, where a letter indicates a variable that can take on any value).<br>The actual set of values is represented by an `instance` of the class. If we have multiple forces, each force is an `instance` of the force class.<br>Creating an `instance` is called `instantiation`, but programmers will often refer to creating an instance of the class, and setting the _initial_ values, as `initializing`.
+>💡 The `class` `definition` is like a blueprint for the `class`. It represents the outline of what data is required, but doesn't represent the _actual_ set of values (much like in algebra, where a letter indicates a variable that can take on any value).<br>The actual set of values is represented by an `instance` of the `class`. If we have multiple forces, each force is an `instance` of the force class.<br>Creating an `instance` is called `instantiation`, but programmers will often refer to creating an instance of the class, and setting the _initial_ values, as `initializing`.
 
-And we can get values from the class by using the variable and the _attribute_ we want to get, linked by a dot:
+We can get values from the class by using the variable and the _attribute_ we want to get, linked by a dot:
 
 ```python
 print('Force in X = ' + str(f1.X))
@@ -107,18 +107,3 @@ for f in fs:
 
 print('Total Force = ' + f_t.to_string())
 ```
-
-## BONUS content - Defining your own Classes
-
-Let's go back to our earlier code snippet and really break down what we're doing with the class definition.
-
-```python
-class Force:
-    def __init__(self, x, y, z):
-    self.X = x
-    self.Y = y
-    self.Z = z
-```
-
-On line 1 we define the class and give it a name 'Force'. On lines 2 to 5, we define a function that will be run every time we create a new instance of the class.
-
