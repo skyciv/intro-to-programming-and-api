@@ -17,12 +17,12 @@ f_tot = 10  # again, set this value ot whatever you want
 With those 2 values, our `if` statement looks like:
 ```python
 if f_tot > f_cap:
-	print("bearing force exceeds the capacity!")
+	print("force exceeds the capacity!")
 ```
 we can also add an "else if" statement using `elif`:
 ```python
 elif f_tot == f_cap:
-	print("bearing force is JUST within capacity")
+	print("force is equal to capacity")
 ```
 
 If the first criterion is met, the `elif` condition will not be checked. If the first criterion is **not** met, the criterion in `elif` will be checked next.
@@ -33,16 +33,16 @@ Finally, we can add an else statement. If none of the conditions in `if` or `eli
 this code block will be processed.
 ```python
 else:
-	print("bearing force is within capacity")
+	print("force is within capacity")
 ```
 all together that looks like:
 ```python
 if f_tot > f_cap:
-	print("bearing force exceeds the capacity!")
+	print("force exceeds the capacity!")
 elif f_tot == f_cap:
-	print("bearing force is JUST within capacity")
+	print("force is equal to capacity")
 else:
-	print("bearing force is within capacity")
+	print("force is within capacity")
 ```
 
 ## Accuracy of calculations on computers

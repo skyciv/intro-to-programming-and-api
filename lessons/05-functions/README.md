@@ -61,7 +61,7 @@ Let's do this for the force against capacity check:
 ```python
 f_cap = 100
 f_tot = 10
-output = "bearing force " + check_against_capacity(f_tot, f_cap)
+output = "force " + check_against_capacity(f_tot, f_cap)
 print(output)
 ```
 

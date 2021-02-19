@@ -32,7 +32,7 @@ total_force = f1 + f2 + f3 + f4 + f5
 We can then show the user this value by printing it to the command line.
 
 ```python
-print('The total force is: ' + str(total_force))
+print('The total force is: ' + str(total_force) + 'kN')
 ```
 
 >💡 The print statement also reveals something about our variables. They have a `type` - our forces and distances are numbers, in this case `floats`. We want to print a `string` to the command line. So we must use the `str()` function to turn our numerical value into a string.
@@ -46,10 +46,10 @@ We can then calculate in turn, the effect of each force on the moment:
 
 ```python
 # For the first force:
-moment = f1 * (midpoint - d1)
+total_moment = f1 * (midpoint - d1)
 
 # For the second force:
-moment = moment + f2 * (midpoint - d2)
+total_moment = total_moment + f2 * (midpoint - d2)
 ```
 NOTE that the code we write defies typical mathematical laws.
 A variable can appear on both sides of the '=' sign.
@@ -58,15 +58,15 @@ The right hand side of '=' will be evaluated first, and then assigned to the lef
 This operation is so common, that python has a convenient shorthand for this: `+=`. Applied to the 3rd force, that looks like:
 ```python
  # For the third force
-moment += f3 * (midpoint - d3)
+total_moment += f3 * (midpoint - d3)
 ```
 
 NOTE: The exact syntax of '+=', '-=', '*=' & '/=' is language specific, but these kinds of operations are supported in many modern programming languages.
 
 We can finish the calculation of the total moment, and print it as well:
 ```python
-moment += f4 * (midpoint - d4) # fourth force
-moment += f5 * (midpoint - d5) # fifth force
+total_moment += f4 * (midpoint - d4) # fourth force
+total_moment += f5 * (midpoint - d5) # fifth force
 
-print('The total moment is: ' + str(total_moment))
+print('The total moment is: ' + str(total_moment) + 'kNm')
 ```
