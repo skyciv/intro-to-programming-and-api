@@ -2,8 +2,8 @@ import skyciv
 
 api_object = {
     "auth": {
-        username: 'YOUR_SKYCIV_USERNAME',
-        key: 'YOUR_SKYCIV_API_KEY',
+        "username": 'YOUR_SKYCIV_USERNAME',
+        "key": 'YOUR_SKYCIV_API_KEY',
     },
     "functions": [
         {
